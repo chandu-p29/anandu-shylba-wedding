@@ -16,7 +16,7 @@
     <span id="musicIcon">♫</span><span id="musicText">Music</span>
   </button>
 
-  <audio id="weddingMusic" loop preload="none">
+  <audio id="weddingMusic" loop autoplay preload="auto">
     <!-- Add your music file as assets/music.mp3 to enable this. -->
     <source src="assets/music.mp3" type="audio/mpeg">
   </audio>
@@ -26,10 +26,21 @@
       <div class="hero-image" style="background-image:url('assets/couple-3.jpeg')"></div>
       <div class="hero-overlay"></div>
       <div class="hero-content">
-        <div class="ornament">❈</div>
         <p class="subtitle">Two hearts. One beautiful beginning.</p>
         <h1><span>Anandu</span><em>&amp;</em><span>Shyba</span></h1>
-        <p class="invite-line">Together with their families, they invite you to celebrate their wedding.</p>
+        <p class="invite-line">Together with our families, We invite you to celebrate our wedding.</p>
+        <div class="hero-meta">
+          <div class="meta-chip primary">
+            <span>Wedding date</span>
+            <strong>23 Aug 2026</strong>
+          </div>
+          <div class="meta-chip secondary">
+            <span>Days to go</span>
+            <strong id="heroDays">--</strong>
+          </div>
+        </div>
+
+
         <a class="scroll-button" href="#welcome">↓</a>
       </div>
     </section>
@@ -55,26 +66,7 @@
       <p class="eyebrow dark">SAVE THE DATES</p>
       <h2>The Celebrations</h2>
 
-      <article class="event-card">
-        <div class="event-date">
-          <span>SUNDAY</span>
-          <strong>23</strong>
-          <span>AUGUST · 2026</span>
-        </div>
-        <div class="event-details">
-          <div class="event-icon">🪔</div>
-          <p class="event-type">WEDDING CEREMONY</p>
-          <h3>Muhurtham</h3>
-          <p>11:45 AM – 12:10 PM</p>
-          <p class="venue">Kadalayi Sreekrishna Temple<br>Chirakkal, Kannur</p>
-          <a class="button" target="_blank" rel="noopener"
-             href="https://www.google.com/maps/search/?api=1&query=Kadalayi+Sreekrishna+Temple,+Chirakkal,+Kannur">
-             Open in Google Maps
-          </a>
-        </div>
-      </article>
-
-      <article class="event-card">
+      <article class="event-card reception-highlight">
         <div class="event-date">
           <span>MONDAY</span>
           <strong>24</strong>
@@ -85,11 +77,27 @@
           <p class="event-type">WEDDING RECEPTION</p>
           <h3>Reception</h3>
           <p>5:30 PM – 8:30 PM</p>
-          <p class="venue">Paurastya Suvishesha Samajam<br>Athithi Mandhiram Convention Hall, Ayakkadu</p>
+          <p class="venue primary-venue">Paurastya Suvishesha Samajam<br>Athithi Mandhiram Convention Hall, Ayakkadu</p>
           <a class="button" target="_blank" rel="noopener"
              href="https://www.google.com/maps/search/?api=1&query=Paurastya+Suvishesha+Samajam+Athithi+Mandhiram+Convention+Hall+Ayakkadu">
              Open in Google Maps
           </a>
+        </div>
+      </article>
+
+      <article class="event-card wedding-secondary">
+        <div class="event-date">
+          <span>SUNDAY</span>
+          <strong>23</strong>
+          <span>AUGUST · 2026</span>
+        </div>
+        <div class="event-details">
+          <div class="event-icon">🪔</div>
+          <p class="event-type">WEDDING CEREMONY</p>
+          <h3>Muhurtham</h3>
+          <p class="small-reference">For reference</p>
+          <p>11:45 AM – 12:10 PM</p>
+          <p class="venue secondary-venue">Kadalayi Sreekrishna Temple<br>Chirakkal, Kannur</p>
         </div>
       </article>
     </section>
@@ -109,10 +117,19 @@
     <section class="gallery section">
       <p class="eyebrow dark">A LITTLE GLIMPSE</p>
       <h2>Our Moments</h2>
-      <div class="gallery-grid">
-        <button class="gallery-item tall" data-src="assets/couple-2.jpeg"><img src="assets/couple-2.jpeg" alt="Anandu and Shyba in the hills"></button>
-        <button class="gallery-item" data-src="assets/couple-1.jpeg"><img src="assets/couple-1.jpeg" alt="Anandu and Shyba walking in the rain"></button>
-        <button class="gallery-item" data-src="assets/couple-3.jpeg"><img src="assets/couple-3.jpeg" alt="Anandu and Shyba together under an umbrella"></button>
+      <div class="photo-frame" aria-label="Our memories gallery">
+        <div class="photo-track">
+          <button class="photo-slide active" data-src="assets/couple-6.jpeg"><img src="assets/couple-6.jpeg" alt="Anandu and Shyba in the hills"></button>
+          <button class="photo-slide" data-src="assets/couple-2.jpeg"><img src="assets/couple-2.jpeg" alt="Anandu and Shyba walking in the rain"></button>
+          <button class="photo-slide" data-src="assets/couple-5.jpeg"><img src="assets/couple-5.jpeg" alt="Anandu and Shyba together under an umbrella"></button>
+          <button class="photo-slide" data-src="assets/couple-7.jpeg"><img src="assets/couple-7.jpeg" alt="Anandu and Shyba candid"></button>
+          <button class="photo-slide" data-src="assets/couple-1.jpeg"><img src="assets/couple-1.jpeg" alt="Anandu and Shyba together"></button>
+          <button class="photo-slide" data-src="assets/couple-3.jpeg"><img src="assets/couple-3.jpeg" alt="Anandu and Shyba together 2"></button>          
+        </div>
+        <div class="photo-controls">
+          <button class="nav-btn prev" type="button" aria-label="Previous photo">←</button>
+          <button class="nav-btn next" type="button" aria-label="Next photo">→</button>
+        </div>
       </div>
     </section>
 
