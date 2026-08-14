@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f0e4">
+  <meta name="description" content="Wedding invitation of Anandu & Shylba — 23 & 24 August 2026">
+  <title>Anandu & Shylba | Wedding Invitation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Noto+Serif+Malayalam:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <button class="music-toggle" id="musicToggle" aria-label="Toggle background music">
+    <span id="musicIcon">♫</span><span id="musicText">Music</span>
+  </button>
+
+  <audio id="weddingMusic" loop preload="none">
+    <!-- Add your music file as assets/music.mp3 to enable this. -->
+    <source src="assets/music.mp3" type="audio/mpeg">
+  </audio>
+
+  <main>
+    <section class="hero">
+      <div class="hero-image" style="background-image:url('assets/couple-3.jpeg')"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <div class="ornament">❈</div>
+        <p class="subtitle">Two hearts. One beautiful beginning.</p>
+        <h1><span>Anandu</span><em>&amp;</em><span>Shylba</span></h1>
+        <p class="invite-line">Together with their families, they invite you to celebrate their wedding.</p>
+        <a class="scroll-button" href="#welcome">↓</a>
+      </div>
+    </section>
+
+    <section id="welcome" class="section intro">
+      <div class="ornament gold">✦</div>
+      <p class="eyebrow dark">WITH LOVE &amp; JOY</p>
+      <h2>We are getting married</h2>
+      <p class="lead">A new chapter begins with two families, countless blessings, and the people we love most.</p>
+      <div class="names-script">Anandu &amp; Shylba</div>
+      <div class="divider">❧ ✦ ❧</div>
+    </section>
+
+    <section class="photo-feature">
+      <img src="assets/couple-1.jpeg" alt="Anandu and Shylba together">
+      <div class="photo-caption">
+        <span>Our favourite moments</span>
+        <strong>are the ones we share.</strong>
+      </div>
+    </section>
+
+    <section id="events" class="section events">
+      <p class="eyebrow dark">SAVE THE DATES</p>
+      <h2>The Celebrations</h2>
+
+      <article class="event-card">
+        <div class="event-date">
+          <span>SUNDAY</span>
+          <strong>23</strong>
+          <span>AUGUST · 2026</span>
+        </div>
+        <div class="event-details">
+          <div class="event-icon">🪔</div>
+          <p class="event-type">WEDDING CEREMONY</p>
+          <h3>Muhurtham</h3>
+          <p>11:45 AM – 12:10 PM</p>
+          <p class="venue">Kadalayi Sreekrishna Temple<br>Chirakkal, Kannur</p>
+          <a class="button" target="_blank" rel="noopener"
+             href="https://www.google.com/maps/search/?api=1&query=Kadalayi+Sreekrishna+Temple,+Chirakkal,+Kannur">
+             Open in Google Maps
+          </a>
+        </div>
+      </article>
+
+      <article class="event-card">
+        <div class="event-date">
+          <span>MONDAY</span>
+          <strong>24</strong>
+          <span>AUGUST · 2026</span>
+        </div>
+        <div class="event-details">
+          <div class="event-icon">✦</div>
+          <p class="event-type">WEDDING RECEPTION</p>
+          <h3>Reception</h3>
+          <p>5:30 PM – 8:30 PM</p>
+          <p class="venue">Paurastya Suvishesha Samajam<br>Athithi Mandhiram Convention Hall, Ayakkadu</p>
+          <a class="button" target="_blank" rel="noopener"
+             href="https://www.google.com/maps/search/?api=1&query=Paurastya+Suvishesha+Samajam+Athithi+Mandhiram+Convention+Hall+Ayakkadu">
+             Open in Google Maps
+          </a>
+        </div>
+      </article>
+    </section>
+
+    <section class="countdown-section">
+      <div class="countdown-inner">
+        <p class="eyebrow">UNTIL WE SAY “I DO”</p>
+        <div id="countdown" class="countdown">
+          <div><strong id="days">--</strong><span>Days</span></div>
+          <div><strong id="hours">--</strong><span>Hours</span></div>
+          <div><strong id="minutes">--</strong><span>Minutes</span></div>
+          <div><strong id="seconds">--</strong><span>Seconds</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery section">
+      <p class="eyebrow dark">A LITTLE GLIMPSE</p>
+      <h2>Our Moments</h2>
+      <div class="gallery-grid">
+        <button class="gallery-item tall" data-src="assets/couple-2.jpeg"><img src="assets/couple-2.jpeg" alt="Anandu and Shylba in the hills"></button>
+        <button class="gallery-item" data-src="assets/couple-1.jpeg"><img src="assets/couple-1.jpeg" alt="Anandu and Shylba walking in the rain"></button>
+        <button class="gallery-item" data-src="assets/couple-3.jpeg"><img src="assets/couple-3.jpeg" alt="Anandu and Shylba together under an umbrella"></button>
+      </div>
+    </section>
+
+    <section class="invitation section">
+      <p class="eyebrow dark">THE INVITATION</p>
+      <h2>With our families</h2>
+      <p class="lead">We would be honoured by your presence and blessings on these special days.</p>
+      <div class="invitation-frame">
+        <img src="assets/invitation.jpeg" alt="Wedding invitation card">
+      </div>
+    </section>
+
+    <section class="section family">
+      <div class="ornament gold">❦</div>
+      <p class="eyebrow dark">A FAMILY CELEBRATION</p>
+      <h2>Come celebrate with us</h2>
+      <p class="lead">Your presence will make our celebration even more meaningful. We look forward to seeing you and sharing these happy moments together.</p>
+      <div class="divider">✦</div>
+      <div class="names-script">Anandu &amp; Shylba</div>
+      <p class="closing">23 · 24 August 2026</p>
+    </section>
+  </main>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button id="closeLightbox" aria-label="Close image">×</button>
+    <img id="lightboxImage" src="" alt="">
+  </div>
+
+  <footer>
+    <p>Made with love for Anandu &amp; Shylba</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
